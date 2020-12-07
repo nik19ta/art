@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Brand</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1>logo</h1>
+
+        <div class="search">
+            <form>
+                <input class="search_inp" type="text">
+                <button onclick="getGood(document.querySelector('.search_inp').value); event.preventDefault()" class="search_button">Найти</button>
+            </form>
+        </div>
+    </header>
+    <div class="center">
+        <div class="products">
+        </div>
+        <div class="right_menu">
+            <p class="selection_of_the_parameters">Подбор по параметрам</p>
+                <p>-</p>
+            <!-- <div class="price_range">
+                <p class="price_range_p">Цена от</p>
+                <input class="price_range_inp" type="text">
+                <p class="price_range_p">до</p>
+                <input class="price_range_inp" type="text">
+                <button class="price_range_button">Подобрать</button>
+            </div> -->
+        </div>
+    </div>
+</body>
+<script src="../scripts/get_goods.js"></script>
+<script src="../scripts/header.js"></script>
+
+</html>

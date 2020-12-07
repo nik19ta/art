@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',
+    sans-serif;
+    box-sizing: border-box;
+    color: #333;
+
+}
+body {
+    padding-top: 50px;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #d5dddf;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fbfdff;
+    transition: all 0.15s;
+    z-index: 2;
+}
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.right_menu{
+    width:27%;
+    border-left: 1px solid #d5dddf;
+    padding: 10px;
+}
+.selection_of_the_parameters{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.products{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #fbfdff;
+    padding: 20px;
+    width: 73%;
+    overflow-x: scroll;
+}
+.product{
+    cursor: pointer;
+    height: 300px;
+    width: 217px;
+    margin: 10px;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.img{
+    margin-top: 20px;
+    width: 100%;
+}
+.name{
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+}
+.price{
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+}
+.price_range{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+}
+.price_range_inp{
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: inset 0 0 1px;
+    background-color: #ffffff;
+}
+.price_range_p{
+    margin-left: 10px;
+}
+.price_range_button{
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: inset 0 0 1px;
+    cursor: pointer;
+}
+
+.search_inp {
+    width: 460px;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: inset 0 0 1px;
+    background-color: #ffffff;
+    font-size: 12px;
+}
+.search_button{
+    height: 36px;
+    width: 100px;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: inset 0 0 1px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.search{
+    margin-left: 20px;
+}
+ .not {
+     visibility: hidden;
+     opacity: 0;
+ }
+
+ .yes {
+     visibility: visible;
+     opacity: 1;
+ }

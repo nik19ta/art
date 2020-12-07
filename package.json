@@ -1,0 +1,23 @@
+{
+  "name": "online-store",
+  "version": "1.0.0",
+  "description": "online-store",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "html": "^1.0.0",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.4",
+    "urlgenerator": "^0.7.4"
+  },
+  "author": "nik19ta",
+  "license": "ISC"
+}
