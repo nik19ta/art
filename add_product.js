@@ -1,8 +1,9 @@
 const db = require('./db.js')
 
 db.create_obj('products',{
-    name: 'Беспроводные наушники Xiaomi Redmi Airdots S black',
-    price: '1 587',
-    Manufacturer: 'Xiaomi',
-    img: 'https://im0-tub-ru.yandex.net/i?id=5aa0e5d88d21b4b2c5cb2db06e35e40a&n=13&exp=1'
+    "name": "Летний дворик",
+        "price": "50000",
+        "des": "холст, масло, 40 x 50 см, 2015 г.",
+        "img": "https://cdn.demiyanov.art/wp-content/uploads/2020/11/letnij-dvorik.jpg",
+        "id": 2
 })
