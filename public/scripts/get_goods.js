@@ -51,9 +51,6 @@ function appendChildP(elem, product_) {
     let price = document.createElement('p');
     price.className = 'price'
     price.innerHTML = `${product_.price}₽`
-    let manufacturer = document.createElement('p');
-    manufacturer.className = 'manufacturer'
-    manufacturer.innerHTML = `${product_.Manufacturer}`
 
     elem.appendChild(img);
     elem.appendChild(name);

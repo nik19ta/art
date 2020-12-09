@@ -1,57 +1,68 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto',
-    sans-serif;
+    font-family: 'Source Sans Pro',
+        sans-serif;
     box-sizing: border-box;
     color: #333;
-
+    text-decoration: none;
 }
+
+.logo {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
 body {
     padding-top: 50px;
 }
+
 header {
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
-    height: 60px;
-    border-bottom: 1px solid #d5dddf;
+    height: 80px;
     padding-left: 30px;
     padding-right: 30px;
     background-color: #fbfdff;
     transition: all 0.15s;
     z-index: 2;
 }
-.center{
+
+.center {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
 }
-.right_menu{
-    width:27%;
+
+.right_menu {
+    width: 27%;
     border-left: 1px solid #d5dddf;
     padding: 10px;
 }
-.selection_of_the_parameters{
+
+.selection_of_the_parameters {
     margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.products{
+
+.products {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     background-color: #fbfdff;
     padding: 20px;
-    width: 73%;
     overflow-x: scroll;
 }
-.product{
+
+.product {
     cursor: pointer;
     height: 300px;
     width: 217px;
@@ -60,27 +71,32 @@ header {
     margin-top: 15px;
     margin-bottom: 10px;
 }
-.img{
+
+.img {
     margin-top: 20px;
     width: 100%;
 }
-.name{
+
+.name {
     font-size: 13px;
     position: absolute;
     bottom: 0;
 }
-.price{
+
+.price {
     position: absolute;
     bottom: 40px;
     right: 0px;
 }
-.price_range{
+
+.price_range {
     margin-top: 30px;
     display: flex;
     justify-content: flex-start;
     align-self: center;
 }
-.price_range_inp{
+
+.price_range_inp {
     width: 50px;
     margin-left: 10px;
     border-radius: 3px;
@@ -88,10 +104,12 @@ header {
     box-shadow: inset 0 0 1px;
     background-color: #ffffff;
 }
-.price_range_p{
+
+.price_range_p {
     margin-left: 10px;
 }
-.price_range_button{
+
+.price_range_button {
     background-color: #ffffff;
     padding-left: 10px;
     padding-right: 10px;
@@ -114,7 +132,8 @@ header {
     background-color: #ffffff;
     font-size: 12px;
 }
-.search_button{
+
+.search_button {
     height: 36px;
     width: 100px;
     background-color: #ffffff;
@@ -127,15 +146,107 @@ header {
     cursor: pointer;
     font-size: 16px;
 }
-.search{
+
+.search {
     margin-left: 20px;
 }
- .not {
-     visibility: hidden;
-     opacity: 0;
- }
 
- .yes {
-     visibility: visible;
-     opacity: 1;
- }
+.not {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.yes {
+    visibility: visible;
+    opacity: 1;
+}
+
+.links {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.more {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.back_title {
+    background-image: url('https://cdn.demiyanov.art/wp-content/uploads/2019/10/14531808002_ce2a6948e5_o-1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+}
+
+.title {
+    color: #ffffff;
+}
+
+.title_more {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.search {
+    width: 20px;
+    height: 20px;
+    fill: black;
+}
+
+.Landscapes {
+    position: relative;
+}
+
+.vertical__menu {
+    background-color: #fbfdff;
+    top: 60px;
+    left: 0px;
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.Landscapes{
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-self: center;
+}
+.cur{
+    margin-top: calc(100% - 4px);
+}
+
+.vertical__menu__item {
+    width: 100%;
+    color: #000;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 15px;
+    padding-top: 5px;
+    white-space: nowrap;
+}
+
+.cur {
+    height: 100%;
+}
+
+.Landscapes:hover .vertical__menu {
+    display: flex;
+}
