@@ -1,10 +1,17 @@
-const URL = 'http://localhost:3000/';
 let products = document.querySelector('.products')
 
-getGood(null)
+const params = decodeURI(document.location.search);
+const URL = params.split('?')[0];
+
+if (params.split('?')[1]) {
+    getGood(null, params.split('?')[1].split('=')[1])
+} else {
+    getGood(null, null)
+}
 
 
-function getGood(keywords) {
+
+function getGood(keywords, params) {
     fetch(URL + 'get_goods', {
             headers: {
                 'Accept': 'application/json',
@@ -13,11 +20,11 @@ function getGood(keywords) {
             method: "POST",
             body: JSON.stringify({
                 search: keywords,
+                params: params
             })
         })
         .then(response => response.text())
         .then((response) => {
-            console.log(response);
             response = JSON.parse(response)
             while (products.firstChild) {
                 products.removeChild(products.firstChild);

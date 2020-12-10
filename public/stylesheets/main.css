@@ -230,7 +230,7 @@ header {
     justify-self: center;
 }
 .cur{
-    margin-top: calc(100% - 4px);
+    margin-top: 65px;
 }
 
 .vertical__menu__item {
@@ -247,6 +247,14 @@ header {
     height: 100%;
 }
 
-.Landscapes:hover .vertical__menu {
+/* .Landscapes:hover .vertical__menu {
+    display: flex;
+} */
+
+.Landscapes0:hover .vertical__menu0 {
+    display: flex;
+}
+
+.Landscapes1:hover .vertical__menu1 {
     display: flex;
 }

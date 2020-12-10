@@ -23,10 +23,13 @@ router.get('/search', function (req, res) {
 
 router.post('/get_goods', jsonParser, function (req, res) {
   let goods;
-  console.log(req.body.search);
-  if (req.body.search == '' || req.body.search == null) goods = db.select_objs('products');
-  else goods = db.search_obj('products', 'name', req.body.search);
-  res.send(goods)
+  if (req.body.params != null) {
+
+    goods = db.search_obj('products', 'category', req.body.params);
+    res.send(goods)
+  } else {
+    res.send(db.select_objs('products'))
+  }
 });
 
 router.post('/picture', jsonParser, function (req, res) {

@@ -3,20 +3,20 @@
         "name": "Белые пионы",
         "price": "44000",
         "des": "холст, масло, 50 х 65 см, 2018 г.",
-        "Manufacturer": "-",
+        "category": "Деревенские пейзажи",
         "img": "https://cdn.demiyanov.art/wp-content/uploads/2019/10/belye-piony-380x285.jpeg",
         "id": 0
     }, {
         "name": "Аллея",
         "price": "48,000",
-        "Manufacturer": "-",
+        "category": "Городские пейзажи",
         "des": "холст, масло, 40 x 50 см, 2018 г.",
         "img": "https://cdn.demiyanov.art/wp-content/uploads/2019/10/alleja-840x657.jpg",
         "id": 1
     }, {
         "name": "Летний дворик",
         "price": "50000",
-        "Manufacturer": "-",
+        "category": "Деревенские пейзажи",
         "des": "холст, масло, 40 x 50 см, 2015 г.",
         "img": "https://cdn.demiyanov.art/wp-content/uploads/2020/11/letnij-dvorik.jpg",
         "id": 2
@@ -25,7 +25,7 @@
         "name": "Весенний пейзаж №2",
         "price": "45,000",
         "des": "холст, масло, 40 x 50 см, 2018 г.",
-        "Manufacturer": "-",
+        "category": "Летние пейзажи",
         "img": "https://cdn.demiyanov.art/wp-content/uploads/2020/11/vesennij-pejzazh-840x673.jpg",
         "id": 3
     },
@@ -33,9 +33,17 @@
         "name": "Натюрморт с красной тканью",
         "price": "70,000",
         "des": "холст, масло, 50 х 60 см, 2020 г.",
-        "Manufacturer": "-",
+        "category": "Городские пейзажи",
         "img": "https://cdn.demiyanov.art/wp-content/uploads/2020/11/natjurmort-s-krasnoj-tkanju-840x697.jpg",
         "id": 3
+    },
+    {
+        "name": "Осенние розы",
+        "price": "70,000",
+        "des": "ДВП, масло, 40 x 50 см, 2015 г.",
+        "category": "Натюрморты с букетом роз",
+        "img": "https://cdn.demiyanov.art/wp-content/uploads/2019/10/osennie-rozy-1-840x636.jpg",
+        "id": 4
     }
 ]
 }
