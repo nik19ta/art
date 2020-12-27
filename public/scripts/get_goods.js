@@ -49,9 +49,12 @@ function createElem(class_, product_) {
 }
 
 function appendChildP(elem, product_) {
-    let img = document.createElement('img');
-    img.className = 'img';
-    img.src = product_.img;
+    // let img = document.createElement('img');
+    //     img.className = 'img';
+    //     img.src = product_.img;
+    let div_img = document.createElement('div');
+        div_img.style.backgroundImage = `url(${product_.img})`;
+        div_img.className = `img_back`;
     let name = document.createElement('p');
     name.className = 'name'
     name.innerHTML = `${product_.name}`
@@ -59,7 +62,8 @@ function appendChildP(elem, product_) {
     price.className = 'price'
     price.innerHTML = `${product_.price}₽`
 
-    elem.appendChild(img);
+    // elem.appendChild(img);
+    elem.appendChild(div_img);
     elem.appendChild(name);
     elem.appendChild(price);
 }

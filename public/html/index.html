@@ -9,47 +9,55 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
         rel="stylesheet">
     <title>Интернет-магазин</title>
+    <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
 </head>
 
 <body>
-<header id="header">
+    <header id="header">
         <div class="links">
-            <a href="/">Главная</a>
-            <a href="/catalog">Каталог картин</a>
-            <div class="Landscapes Landscapes0" >
-                <p class="cur" >Пейзажи</p>
-                <div class="vertical__menu vertical__menu0" >
+            <a class="" href="/">Главная</a>
+            <a class="" href="/catalog">Каталог картин</a>
+            <div class="Landscapes Landscapes0">
+                <p class="cur">Пейзажи</p>
+                <div class="vertical__menu vertical__menu0">
                     <a class="vertical__menu__item" href="/catalog?=Городские пейзажи">Городские пейзажи</a>
                     <a class="vertical__menu__item" href="/catalog?=Деревенские пейзажи">Деревенские пейзажи</a>
                     <a class="vertical__menu__item" href="/catalog?=Летние пейзажи">Летние пейзажи</a>
                 </div>
             </div>
-            <div class="Landscapes Landscapes1" >
-                <p class="cur" >Натюрморты</p>
-                <div class="vertical__menu vertical__menu1" >
+            <div class="Landscapes Landscapes1">
+                <p class="cur">Натюрморты</p>
+                <div class="vertical__menu vertical__menu1">
                     <a class="vertical__menu__item" href="/catalog?=Натюрморты с букетом роз">Натюрморты с букетом роз</a>
                 </div>
             </div>
         </div>
         <div class="more_div">
-           <a href="/"><img class="logo" src="./../assets/роспись.svg" alt="logo"></a>
+            <a href="/"><img class="logo" src="./../assets/роспись.svg" alt="logo"></a>
         </div>
         <div class="more">
-            <a href="">Скидки</a>
-            <a href="search" > <img class="search"  src="../assets/loupe.svg" alt=""> </a>
+            <a class="" href="">Скидки</a>
+            <div class="header__links">
+                <a href="search"> <img class="search" src="../assets/magnifying_glass.png" alt=""> </a>
+                <a href="search"> <img class="search profile" src="../assets/profile.png" alt=""> </a>
+                <a href="search"> <img class="search" src="../assets/shop.png" alt=""> </a>
+            </div>
         </div>
     </header>
 
 
     <div class="center">
-        <div class="back_title" >
-            <h1 class="title" >Интернет-магазин картин Юрия Демьянова</h1>
-            <p class="title_more" >Оригинальные произведения современного художника с доставкой по России и миру</p>
+        <div class="back_title">
+            <div class="back_title__div">
+                <h1 class="title">Интернет-магазин картин Юрия Демьянова</h1>
+                <p class="title_more">Оригинальные произведения современного художника с доставкой по России и миру</p>
+            </div>
         </div>
-        <!-- <div class="products">
-        </div> -->
+        <div class="back">
+        </div>
     </div>
 </body>
 <script src="../scripts/get_goods.js"></script>
+<script src="../scripts/search.js"></script>
 
 </html>

@@ -57,7 +57,6 @@ function select_objs(name) {
     for (let i = 0; i < data[name].length; i++) {
         result.push(data[name][i])
     }
-    console.log(result);
     return result
 }
 
@@ -66,8 +65,6 @@ function search_obj(name, key, value) {
     data = JSON.parse(data);
     let result = [];
     for (let i = 0; i < data[name].length; i++) {
-        console.log(data[name][i][key]);
-        console.log(value);
         if (data[name][i][key].toLowerCase() == value.toLowerCase()) result.push(data[name][i])
     }
     return result.length > 0 ? result : null

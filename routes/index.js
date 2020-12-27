@@ -33,7 +33,6 @@ router.post('/get_goods', jsonParser, function (req, res) {
 });
 
 router.post('/picture', jsonParser, function (req, res) {
-  console.log(req.body.id);
   res.send({status:'ok'})
 });
 
