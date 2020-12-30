@@ -70,6 +70,24 @@ function search_obj(name, key, value) {
     return result.length > 0 ? result : null
 }
 
+function search_obj_similar(name, key, value, exceptionskey, exceptionsvalue) {
+    let data = fs.readFileSync(filename, encoding);
+    data = JSON.parse(data);
+    let result = [];
+    for (let i = 0; i < data[name].length; i++) {
+        if (data[name][i][key].toLowerCase() == value.toLowerCase() && data[name][i][exceptionskey] != exceptionsvalue) result.push(data[name][i])
+    }
+    return result.length > 0 ? result : null
+}
+function search_obj_int(name, key, value) {
+    let data = fs.readFileSync(filename, encoding);
+    data = JSON.parse(data);
+    let result = [];
+    for (let i = 0; i < data[name].length; i++) {
+        if (data[name][i][key] == value) result.push(data[name][i])
+    }
+    return result.length > 0 ? result : null
+}
 
 module.exports.create_obj = create_obj;
 module.exports.del_obj = del_obj;
@@ -77,3 +95,5 @@ module.exports.update_obj = update_obj;
 module.exports.select_obj = select_obj;
 module.exports.search_obj = search_obj;
 module.exports.select_objs = select_objs;
+module.exports.search_obj_int = search_obj_int;
+module.exports.search_obj_similar = search_obj_similar;

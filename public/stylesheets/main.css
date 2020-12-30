@@ -20,7 +20,7 @@ body {
 
 header {
     position: fixed;
-    top: 0;
+    top: 40px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -175,8 +175,9 @@ header {
     justify-content: space-around;
     align-items: center;
 }
-
+    
 .center {
+    margin-top: 40px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -283,24 +284,6 @@ header {
     margin-top: 65px;
     height: 100%;
 }
-.link__header::before {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: #000;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    bottom: 20px;
-}
-.link__header {
-    background: chartreuse;
-}
-
-/* .Landscapes:hover .vertical__menu {
-    display: flex;
-} */
 
 .Landscapes0:hover .vertical__menu0 {
     display: flex;
@@ -326,9 +309,39 @@ header {
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-size: 100%;
-    transition: background-size 300ms linear;
+    transition: background-size 250ms linear;
     
 }
 .img_back:hover{
-    background-size: 115%;
+    background-size: 110%;
+}
+.link__header {
+    /* background: red; */
+    position: relative;
+}
+.link__header::before {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #000;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    transition: width .200s linear;
+}
+.link__header:hover:before {
+    width: 100%;
+}
+
+.pre_header{
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #000;
+    z-index: 5 !important;
+    color: #fff;
+    font-size: .875rem;
 }

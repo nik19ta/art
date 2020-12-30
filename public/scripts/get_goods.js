@@ -40,18 +40,22 @@ function getGood(keywords, params) {
 
 }
 
+function to_prod(data) {
+    console.log(data);
+}
 
 function createElem(class_, product_) {
-    let elem = document.createElement('div');
+    let elem = document.createElement('a');
+        elem.href = `/product/${product_.id}`
     elem.className = class_;
+        elem.onclick = function () {
+            to_prod(product_.id)
+        };
     elem.id = product_.id;
     return elem
 }
 
 function appendChildP(elem, product_) {
-    // let img = document.createElement('img');
-    //     img.className = 'img';
-    //     img.src = product_.img;
     let div_img = document.createElement('div');
         div_img.style.backgroundImage = `url(${product_.img})`;
         div_img.className = `img_back`;
