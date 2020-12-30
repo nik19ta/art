@@ -337,16 +337,7 @@ header {
     width: 100%;
 }
 
-.pre_header{
-    position: absolute;
-    top: 0;
-    height: 40px;
-    width: 100%;
-    background-color: #000;
-    z-index: 5 !important;
-    color: #fff;
-    font-size: .875rem;
-}
+
 .get_peoduct__img{
     width: 585px;
     border-radius: 2px;
@@ -396,4 +387,25 @@ header {
     position: absolute;
     top: 20px;
     transition: width .200s linear;
+}
+.pre_header {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #000;
+    z-index: 5 !important;
+    gap: 40px;
+    font-size: .875rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.pre_header__link{
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: #dfdfdf !important;
 }
