@@ -41,6 +41,9 @@ function draw(data) {
     document.querySelector('#title').innerHTML = data.data[0].name;
     document.querySelector('#desc').innerHTML = data.data[0].des;
     document.querySelector('#price').innerHTML = data.data[0].price;
+    document.querySelector('#category').innerHTML = data.data[0].category;
+        document.querySelector('#category').href = `/catalog?=${data.data[0].category}`
+    document.querySelector('#name').innerHTML = data.data[0].name;
 
     elem_left.appendChild(div_img);
 }
