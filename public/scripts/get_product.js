@@ -22,7 +22,25 @@ function get_product(id) {
         .then(response => response.text())
         .then((response) => {
             response = JSON.parse(response)
-            console.log(response);
+            draw(response);
         })
         .catch(err => console.log(err))
+}
+
+function draw(data) {
+    console.log(data.data[0]);
+
+    let elem_left = document.querySelector('#left');
+
+    let div_img = document.createElement('img');
+        div_img.src = `${data.data[0]['img']}`
+        div_img.className = `get_peoduct__img`;
+
+
+    document.title = data.data[0].name;
+    document.querySelector('#title').innerHTML = data.data[0].name;
+    document.querySelector('#desc').innerHTML = data.data[0].des;
+    document.querySelector('#price').innerHTML = data.data[0].price;
+
+    elem_left.appendChild(div_img);
 }

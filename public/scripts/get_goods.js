@@ -46,7 +46,7 @@ function to_prod(data) {
 
 function createElem(class_, product_) {
     let elem = document.createElement('a');
-        elem.href = `/product/${product_.id}`
+        elem.href = `/product?id=${product_.id}`
     elem.className = class_;
         elem.onclick = function () {
             to_prod(product_.id)
